@@ -3,52 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <title>Black Goose Bistro: Blog</title>
-</article>
-<header>
-    <h1>The Black Goose Blog</h1>
-    <nav>
-        <u1>
-            <li>Home</li>
-            <li>Menu</li>
-            <li>Blog</li>
-            <li>Contact</li>
-        </u1>
-    </nav>
-</header>
-
+    <style>
+        nav ul {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+        }
+        nav ul li {
+            font-family: sans-serif;
+            font-size: 1.2em;
+            line-height: 40px;
+            height: 40px;
+            padding: 0px 40px;
+            border-bottom: 1px solid #888;
+            color: #444;
+            display: inline;
+        }
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #444;
+            color: white;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        article {
+            margin-bottom: 20px;
+        }
+        article header {
+            background-color: #444;
+            color: white;
+            padding: 10px 20px;
+        }
+        article header h2 {
+            margin: 0;
+        }
+        article header p {
+            font-size: 0.8em;
+        }
+        article header time {
+            font-size: 0.8em;
+        }
+        article section {
+            margin: 20px 0;
+        }
+        article section h3 {
+            font-size: 1.2em;
+            margin: 0;
+        }
+        article section dl {
+            margin: 0;
+        }
+        article section dt {
+            font-weight: bold;
+            margin-top: 1em;
+        }
+        article section dd {
+            margin-left: 20px;
+            margin-bottom: 1em;
+        }
+        article section dd .price {
+            float: right;
+        }
+        footer {
+            background-color: #444;
+            color: white;
+            padding: 10px 20px;
+        }
+        footer #about {
+            float: left;
+            width: 50%;
+        }
+        footer p {
+            font-size: 0.8em;
+        }
+        footer time {
+            font-size: 0.8em;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>The Black Goose Blog</h1>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Menu</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
     <article>
         <header>
             <h2>Summer Menu Items</h2>
-        <p>posted by BGB</p>
+            <p>posted by BGB</p>
             <time datetime="2019-06-15">June 15, 2019</time>
-        </p>
         </header>
-        <p>Our ches has been busy putting together the perfect menu for the summer months. Stop by to try these appetizers and main courses while
-            the days are still long.</p>
-        <section id=""appetizers">
+        <p>Our chefs have been busy putting together the perfect menu for the summer months. Stop by to try these appetizers and main courses while the days are still long.</p>
+        <section id="appetizers">
             <h3>Appetizers</h3>
-        <d1>
-            <dt>Black bean purses</dt>
-            <dd>Spicy black bean and a blend of mexican cheeses wrapped in sheets of phyllo and backed until golden. <span class="price">3.95</span></dd>
-            <dt>Southwestern napoleons with lump crab &mdash; <strong>new item!</strong>
-            </dt>
-            <dd>Layers of light lump crab meat, bean and corn salsa, and our handmade flour tortilla.<span class="price">$7.95</span></dd>
-        </d1>
+            <dl>
+                <dt>Black bean purses</dt>
+                <dd>Spicy black bean and a blend of Mexican cheeses wrapped in sheets of phyllo and baked until golden. <span class="price">$3.95</span></dd>
+                <dt>Southwestern napoleons with lump crab &mdash; <strong>new item!</strong></dt>
+                <dd>Layers of light lump crab meat, bean and corn salsa, and our handmade flour tortilla. <span class="price">$7.95</span></dd>
+            </dl>
         </section> 
         <section id="maincourses">
             <h3>Main Courses</h3>
-            <d1>
-                <dt>Shrimp sate kebabs with peanut souce</dt>
-                <dd>Skewars of shrimp marinated in lemongrass, garlic, and fish sauce then grilled to perfection. Served peanut sause and
-                jasmine rice. <span class="price">12.95</span></dd>
+            <dl>
+                <dt>Shrimp sate kebabs with peanut sauce</dt>
+                <dd>Skewers of shrimp marinated in lemongrass, garlic, and fish sauce then grilled to perfection. Served with peanut sauce and jasmine rice. <span class="price">$12.95</span></dd>
                 <dt>Jerk rotisserie chicken with fried plantains &mdash; <strong>new item!</strong></dt>
-                <dd> Tendor chicken slow-roasted on the rotisserie, flavored with spicy and fragrant jerk sause and served with fried plantains and
-                 fresh mango. <span class="price">12.95</span></dd>
-            </d1>
+                <dd>Tender chicken slow-roasted on the rotisserie, flavored with spicy and fragrant jerk sauce and served with fried plantains and fresh mango. <span class="price">$12.95</span></dd>
+            </dl>
         </section>
-        </article>
+    </article>
+
+    <article>
+        <header>
+            <h2>Low and Slow</h2>
+            <p>posted by BGB, <time datetime="2019-11-15">November 15, 2019</time></p>
+        </header>
+        <section>
+            <p>This week I am <em>extremely</em> excited about a new cooking technique called <dfn><i>sous vide</i></dfn>. In <i>sous vide</i> cooking, you submerge the food (usually vacuum-sealed in plastic) into a water bath that is precisely set to the target temperature of the food. In his book, <cite>Cooking for Geeks</cite>, Jeff Potter describes it as <q>ultra-low-temperature poaching</q>.</p>
+            <p>Next month, we will be serving <b>Sous Vide Salmon with Dill Hollandaise</b>. To reserve a seat at the chef's table, contact us before November 30.</p>
+        </section>
+    </article>
 
     <footer>
         <div id="about">
@@ -58,11 +149,10 @@
                 Tuesday to Saturday,
                 <time datetime="11:00">11am</time>
                 to
-                <time datetime="00:00">mitnight</time>
+                <time datetime="00:00">midnight</time>
             </p>
         </div>            
         <p>All content copyright &copy; 2019, Black Goose Bistro and Jennifer Robbins.</p>
     </footer>
-
 </body>
 </html>
