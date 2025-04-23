@@ -1,0 +1,63 @@
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+    }
+    .navbar {
+      background-color: #343a40;
+    }
+    .navbar-brand img {
+      height: 50px;
+    }
+    .nav-link {
+      color: #fff !important;
+      font-weight: bold;
+    }
+    #banner {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #343a40;
+    }
+    section p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+    button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    footer {
+      background-color: #343a40;
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+    }
+    footer h4 {
+      margin-bottom: 10px;
+    }
+    footer p {
+      font-size: 0.9rem;
+    }
+    .img-fluid {
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    .inner-text {
+      text-align: center;
+      margin-bottom: 20px;
+    }
