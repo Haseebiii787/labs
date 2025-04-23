@@ -1,0 +1,94 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+  }
+  
+  img {
+	max-width: 100%;
+	height: auto;
+  }
+  
+  header {
+	padding: 4%;
+	text-align: center;
+  }
+  
+  header h1 img {
+	max-width: 300px;
+	width: 100%;
+  }
+  
+  nav {
+	background-color: #f2f2f2;
+	padding: 2% 0;
+  }
+  
+  nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+  }
+  
+  nav ul li {
+	margin: 0 2%;
+  }
+  
+  nav ul li a {
+	text-decoration: none;
+	color: #333;
+	padding: 2%;
+	transition: background-color 0.3s, color 0.3s;
+  }
+  
+  nav ul li a:hover {
+	background-color: #bf165e;
+	color: #fff;
+  }
+  
+  article {
+	overflow: hidden;
+	padding: 4%;
+  }
+  
+  #products {
+	float: left;
+	width: 60%;
+	box-sizing: border-box;
+	padding: 2%;
+  }
+  
+  #testimonials {
+	float: right;
+	width: 38%;
+	box-sizing: border-box;
+	padding: 2%;
+  }
+  
+  footer {
+	background-color: #222;
+	color: #fff;
+	text-align: center;
+	padding: 2%;
+	clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+	#products,
+	#testimonials {
+	  float: none;
+	  width: 90%;
+	  margin: 2em auto;
+	  clear: both;
+	}
+  }
+  
+  @media screen and (max-width: 768px) {
+	.inner-text,
+	#activities h3 {
+	  font-size: 90%;
+	}
+  }
+  
