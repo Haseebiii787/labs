@@ -1,0 +1,67 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.navbar {
+    background-color: #ffffff;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ff6b6b;
+}
+
+.navbar-brand:hover {
+    color: #ff3b3b;
+}
+
+.nav-link {
+    color: #333;
+}
+
+.nav-link:hover {
+    color: #ff6b6b;
+}
+
+#home {
+    background: linear-gradient(135deg, #f9d976, #f39f86);
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+#achievement h2, #gallery h2, #contact h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ff6b6b;
+}
+
+#achievement p, #contact p {
+    font-size: 1.1rem;
+}
+
+#gallery img {
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#gallery img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #222;
+    color: #bbb;
+    font-size: 0.9rem;
+}
+
+footer small {
+    letter-spacing: 1px;
+}

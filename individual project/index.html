@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Development Journey</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom CSS for My Achievement Website */
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #ff6b6b;
+        }
+
+        .navbar-brand:hover {
+            color: #ff3b3b;
+        }
+
+        .nav-link {
+            color: #333;
+        }
+
+        .nav-link:hover {
+            color: #ff6b6b;
+        }
+
+        #home {
+            background: linear-gradient(135deg, #74ebd5, #acb6e5);
+             min-height: 60vh;
+             padding: 80px 0;
+             color: #fff;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             flex-direction: column;
+             text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+             animation: gradientBG 10s ease infinite;
+             background-size: 400% 400%;
+        }
+
+        #home h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+#home p.lead {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+
+    @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        #achievement h2, #gallery h2, #contact h2 {
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #ff6b6b;
+        }
+
+        #achievement .col-md-6 {
+            padding: 20px;
+        }
+        #achievement .col-md-6 p {
+             text-align: left;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            color: #555;
+        }    
+
+
+
+        #gallery img {
+            transition: transform 0.3s ease;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #222;
+            color: #bbb;
+            font-size: 0.9rem;
+        }
+
+        footer small {
+            letter-spacing: 1px;
+        }
+    </style>
+
+</head>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-light bg-light shadow-sm py-3">
+    <div class="container flex-column text-center">
+        <!-- Brand Title -->
+        <a class="navbar-brand mb-3 fs-3 fw-bold text-danger" href="#">My Web Development Journey</a>
+
+        <!-- Navigation Links -->
+        <div class="navbar-nav d-flex flex-column flex-md-row justify-content-center w-100">
+            <a class="nav-link px-3" href="#home">Home</a>
+            <a class="nav-link px-3" href="#achievement">Achievement</a>
+            <a class="nav-link px-3" href="#gallery">Gallery</a>
+            <a class="nav-link px-3" href="#contact">Contact</a>
+
+            <!-- Dropdown Menu -->
+            <div class="nav-item dropdown px-3">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">
+                    More
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#project1">Project 1</a></li>
+                    <li><a class="dropdown-item" href="#project2">Project 2</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#inspiration">Inspiration</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <!-- Home Section -->
+    <section id="home" class="d-flex align-items-center text-center">
+        <div class="container">
+            <h1 class="display-4">Welcome to My Web Development Journey!</h1>
+            <p class="lead">From Code Newbie to Creator</p>
+        </div>
+    </section>
+    
+   <!-- Achievement Section -->
+<section id="achievement" class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Image on the left side -->
+            <div class="col-md-6 text-center">
+                <img src="images/illustrated-about-me-concept_52683-59123.jpg.avif" alt="Haseeb's Profile" class="img-fluid rounded shadow">
+            </div>
+
+            <!-- Paragraph on the left with 5 lines -->
+            <div class="col-md-6">
+                <h2>About Me</h2>
+                <p class="mt-4">
+                    Hi, I'm Haseeb, and my journey into web development has been nothing short of amazing! 
+                    When I first started, I was just learning the basics of HTML, but over time, I’ve mastered 
+                    how to structure pages, style them with CSS, and bring creative ideas to life through code. 
+                    This website showcases everything I’ve learned—projects, achievements, and the skills I’ve built 
+                    along the way. Join me in celebrating my progress and exploring my work!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Gallery Section -->
+    <section id="What i have learned" class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <h2>What I Have Learned</h2>
+                <div class="col-md-4 mt-4">
+                    <img src="images/HTML-Blog-Cover.png" alt="HTML Project" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4 mt-4">
+                    <img src="images/images.jpeg" alt="CSS Project" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4 mt-4">
+                    <img src="images/download.png" alt="Bootstrap Project" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Contact Me</h2>
+                    <p class="mt-3">Feel free to reach out at <strong>hh887792@gmail.com</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <small>Made with &#10084; by Haseeb</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
